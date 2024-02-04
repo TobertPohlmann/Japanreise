@@ -1,0 +1,15 @@
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/bin/Debug/net7.0/Japanreise
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/bin/Debug/net7.0/Japanreise.deps.json
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/bin/Debug/net7.0/Japanreise.runtimeconfig.json
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/bin/Debug/net7.0/Japanreise.dll
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/bin/Debug/net7.0/Japanreise.pdb
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/Japanreise.csproj.AssemblyReference.cache
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/Japanreise.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/Japanreise.AssemblyInfoInputs.cache
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/Japanreise.AssemblyInfo.cs
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/Japanreise.csproj.CoreCompileInputs.cache
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/Japanreise.dll
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/refint/Japanreise.dll
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/Japanreise.pdb
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/Japanreise.genruntimeconfig.cache
+/mnt/Windows-Daten/Tobi/Programmiersachen/Japanreise/Japanreise/Japanreise/obj/Debug/net7.0/ref/Japanreise.dll
