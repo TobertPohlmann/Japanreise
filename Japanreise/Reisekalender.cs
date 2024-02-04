@@ -10,7 +10,6 @@ public class Reisekalender
     public Reisekalender(DateOnly startTag, DateOnly endTag)
     {
         _kalender[startTag] = new Unternehmung("Hamburg", 1, "--","Hinflug");
-        _kalender[startTag.AddDays(1)] = new Unternehmung("Osaka", 1,"--", "Ankunft ~17:00");
         _kalender[endTag.AddDays(1)] = new Unternehmung("Hamburg", 1,"--", "Ankunft");
         _startTag = startTag;
         _endTag = endTag;
@@ -60,6 +59,9 @@ public class Reisekalender
     private List<string> GeneratePrintVersion()
     {
         var result = new List<string>();
+        int maxHotelTabs = GetMaximumTabs((Unternehmung t) => { return t.Hotel.TabCount(); });
+        int maxOrtTabs = GetMaximumTabs((Unternehmung t) => { return t.Ort.TabCount(); });
+
         result.Add("Japanreise 2024: ");
         result.Add("------------------------------------");
 
@@ -69,7 +71,7 @@ public class Reisekalender
             if (_kalender.ContainsKey(tag))
             {
                 var eintrag = _kalender[tag];
-                result = result.Concat(PrintEintrag(tag, eintrag)).ToList();
+                result = result.Concat(PrintEintrag(tag, eintrag, maxOrtTabs, maxHotelTabs)).ToList();
                 tag = tag.AddDays(eintrag.Dauer);
             }
             else
@@ -81,6 +83,17 @@ public class Reisekalender
         result.Add("-------------------------------------");
         return result;
     }
+
+    private int GetMaximumTabs(Func<Unternehmung,int> getPropertyTabs)
+    {
+        int maxTabCount = 2;
+        foreach(var tag in _kalender)
+        {
+            maxTabCount = (getPropertyTabs(tag.Value) > maxTabCount) ? getPropertyTabs(tag.Value) : maxTabCount;
+        }
+        return maxTabCount + 1;
+    }
+
     
     public void PrintKalender()
     {
@@ -114,16 +127,16 @@ public class Reisekalender
         Console.WriteLine("Gespeichert als: "+path+"/"+filename);
     }
 
-    private List<string> PrintEintrag(DateOnly startTag, Unternehmung unternehmung)
+    private List<string> PrintEintrag(DateOnly startTag, Unternehmung unternehmung, int ortTabs = 3, int hotelTabs = 3)
     {
-        string[] unternehmungen = unternehmung.GetString();
+        string[] unternehmungen = unternehmung.GetString(ortTabs,hotelTabs);
         int counter = 0;
         DateOnly tag;
         var result = new List<string>();
         foreach (var u in unternehmungen)
         {
             tag = startTag.AddDays(counter);
-            result.Add(tag.DayOfWeek + tag.DayOfWeek.ToString().GetTabs(2) + tag.Day + ". April\t" +  u);
+            result.Add(tag.DayOfWeek.ToString().WithTabs(2) + tag.Day + ". April\t" +  u);
             counter++;
         }
         return result;

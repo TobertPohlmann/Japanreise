@@ -19,12 +19,12 @@ public class Unternehmung
     }
 
 
-    public string[] GetString()
+    public string[] GetString(int ortTabs, int hotelTabs)
     {
         var result = new string[Dauer];
         for (int i = 0; i < Dauer; i++)
         {
-            result[i] = Ort + Ort.GetTabs() + Hotel + Hotel.GetTabs();
+            result[i] = Ort.WithTabs(ortTabs) + Hotel.WithTabs(hotelTabs);
         }
 
         result[0] += SerializeUnternehmungen();

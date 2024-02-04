@@ -19,4 +19,10 @@ public static class TabExtension
         return eintrag + eintrag.GetTabs(tabCount);
     }
 
+    public static int TabCount(this string eintrag) 
+    {
+        int characterPerTab = 8;
+        return eintrag.Length / characterPerTab;
+    }
+
 }
