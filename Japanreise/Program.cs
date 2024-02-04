@@ -17,4 +17,4 @@ reise.AddUnternehmung("Osaka",1,"--","Rumbummeln","Burg Osaka","Dotonburi","Poke
 reise.AddUnternehmung("Koyasan",1,"--","Tempel angucken");
 reise.AddUnternehmung("Osaka",1,"--",new DateOnly(2024,4,24),"Rückflug");
 reise.PrintKalender();
-reise.WriteToFile("Japanreise_2024.txt");
+//reise.WriteToFile("Japanreise_2024.txt");

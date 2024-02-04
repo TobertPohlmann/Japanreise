@@ -13,4 +13,10 @@ public static class TabExtension
         }
         return result;
     }
+
+    public static string WithTabs(this string eintrag, int tabCount = 3)
+    {
+        return eintrag + eintrag.GetTabs(tabCount);
+    }
+
 }
