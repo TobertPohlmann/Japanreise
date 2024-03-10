@@ -1,23 +1,23 @@
 Japanreise 2024: 
 ------------------------------------
-Saturday	6. April	Hamburg			--			Hinflug
-Sunday		7. April	Osaka			--			Ankunft ~17:00
-Monday		8. April	Osaka			--			Rumbummeln/Jetlag
-Tuesday		9. April	Magome			--			Von Osaka: 4-5h
-Wednesday	10. April	Tsumago-Juku		--			Magome-Tsumago-Pfad, Museumsdorf
-Thursday	11. April	Matsumoto		--			Wasabifarm, Burg Matsumoto
-Friday		12. April	Takayama		Wanosato		
-Saturday	13. April	Takayama		Wing International	Frühlingsfest, Shirakawago
-Sunday		14. April	Takayama		Wing International	
-Monday		15. April	Takayama		Wing International	
-Tuesday		16. April	Takayama		--			
-Wednesday	17. April	Dragon Quest Island	--			Dragon Quest Land, Narutoland
-Thursday	18. April	Dragon Quest Island	--			
-Friday		19. April	Tatsuyama		--			Kotohiragu-Schrein, Homestay
-Saturday	20. April	Tatsuyama		--			
-Sunday		21. April	Tatsuyama		--			
-Monday		22. April	Osaka			--			Rumbummeln, Burg Osaka, Dotonburi, Pokemon Cafe
-Tuesday		23. April	Koyasan			--			Tempel angucken
-Wednesday	24. April	Osaka			--			Rückflug
-Thursday	25. April	Hamburg			--			Ankunft
+Saturday	6. April	Hamburg			--				Hinflug
+Sunday		7. April	Osaka			APA Hotel Umeda-eki Tower	Ankunft ~17:00, Rumbummeln/Jetlag
+Monday		8. April	Osaka			APA Hotel Umeda-eki Tower	
+Tuesday		9. April	Nakatsugawa		Ryokan O			Von Osaka: 4-5h, Ankunft: 18 Uhr
+Wednesday	10. April	Nakatsugawa		Ryokan O			Magome-Tsumago-Pfad, Museumsdorf
+Thursday	11. April	Matsumoto		Mitsubikiya			Wasabifarm, Burg Matsumoto
+Friday		12. April	Takayama		Wanosato			
+Saturday	13. April	Takayama		Wing International		Frühlingsfest, Shirakawago
+Sunday		14. April	Takayama		Wing International		
+Monday		15. April	Takayama		Wing International		
+Tuesday		16. April	Takayama		--				
+Wednesday	17. April	Osaka			--				Anreise, Übernachtung
+Thursday	18. April	Osaka			--				Dragon Quest Land
+Friday		19. April	Tanabe			The CUE				Anreise nach Tanabe, Rumpimmeln in Tanabe
+Saturday	20. April	Chikatsuyu		Minshuku WAGO			Kumano-Kodo-Pfad, Takajiri->Chikatsuyu
+Sunday		21. April	Hongu			--				Kumano-Kodo-Pfad, Chikatsuyu->Hongu
+Monday		22. April	Nachi			--				Bootstour->Hayatama, Haytama angucken, nach Nachi laufen
+Tuesday		23. April	Osaka			--				Nachi Taisha angucken, RÜckfahrt nach Osaka
+Wednesday	24. April	Osaka			--				Rumbummeln, Burg Osaka, Dotonburi, Pokemon Cafe,Rückflug
+Thursday	25. April	Hamburg			--				Ankunft
 -------------------------------------
