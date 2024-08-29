@@ -33,18 +33,20 @@ public class Reisekalender
     private readonly DateOnly _startTag;
     private readonly DateOnly _endTag;
     private List<string> _warnungen = new();
+    private DateOnly _neuesterEintrag;
 
     public Reisekalender(DateOnly startTag, DateOnly endTag)
     {
         //_kalender[startTag] = new Unternehmung("Hamburg", 1, "--","Hinflug");
         //_kalender[endTag.AddDays(1)] = new Unternehmung("Hamburg", 1,"--", "Ankunft");
         _startTag = startTag;
+        _neuesterEintrag = startTag;
         _endTag = endTag;
     }
 
     public void AddUnternehmung(string wo, int wieLange, string hotel, params string[] was)
     {
-        AddUnternehmung(wo,wieLange,hotel,GetNaechsterFreierTag(),was);
+        AddUnternehmung(wo,wieLange,hotel,GetNächsterFreierTagAb(_neuesterEintrag),was);
     }
     public void AddUnternehmung(string wo, int wieLange, string hotel, DateOnly startTag, params string[] was)
     {
@@ -53,6 +55,7 @@ public class Reisekalender
         if (isValid)
         {
             _kalender[startTag] = unternehmung;
+            _neuesterEintrag = startTag.AddDays(wieLange-1);
         }
     }
 
@@ -73,9 +76,8 @@ public class Reisekalender
         return true;
     }
 
-    private DateOnly GetNaechsterFreierTag()
+    private DateOnly GetNächsterFreierTagAb(DateOnly tag)
     {
-        var tag = _startTag;
         while (_kalender.ContainsKey(tag) && tag < _endTag)
         {
             tag = tag.AddDays(_kalender[tag].Dauer);
