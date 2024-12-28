@@ -55,7 +55,8 @@ public class Reisekalender
         if (isValid)
         {
             _kalender[startTag] = unternehmung;
-            _neuesterEintrag = startTag.AddDays(wieLange-1);
+            //_neuesterEintrag = startTag.AddDays(wieLange-1);
+            _neuesterEintrag = startTag;
         }
     }
 
@@ -165,7 +166,7 @@ public class Reisekalender
         foreach (var u in unternehmungen)
         {
             tag = startTag.AddDays(counter);
-            result.Add(_weekdayDictionary[(int)tag.DayOfWeek].WithTabs(2) + tag.Day + "."+ _monthsDictionary[tag.Month] +"\t" +  u);
+            result.Add(_weekdayDictionary[(int)tag.DayOfWeek].WithTabs(2) + tag.Day + "."+ _monthsDictionary[tag.Month] +"    \t" +  u);
             counter++;
         }
         return result;

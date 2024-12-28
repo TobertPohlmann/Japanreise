@@ -3,7 +3,6 @@
 using System.Globalization;
 using Reiseplanung;
 
-var japan = new Japanreise();
-var schottland = new Schottlandreise();
-//japan.Write();
-schottland.Write();
+var japan24 = new Japanreise();
+var japan25 = new Japanreise_2025();
+japan24.Write();
